@@ -1,1 +1,3 @@
-hljs.highlightAll();
+$(() => {
+    hljs.highlightAll();
+});
