@@ -29,6 +29,7 @@
 
 <body>
   <div class="container">
+    <br>
     <div asg="pages/test.asg.html"></div>
   </div>
 
@@ -62,6 +63,23 @@
   <!-- script -->
   <script src="res/js/main.js"></script>
   <script src="res/js/file.js"></script>
+
+  <div id="box-temp" class="problem visually-hidden">
+    <form action="" method="get">
+      <textarea name="code" class="form-control" cols="30" rows="10" pid="0"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-6 col-md-8">
+          <input type="file" class="form-control" pid="0" onchange="codeInputChange(this);">
+        </div>
+        <div class="col-6 col-md-4">
+          <input type="submit" class="form-control">
+        </div>
+      </div>
+      <br>
+      <pre class="log" pid="0"></pre>
+    </form>
+  </div>
 </body>
 
 </html>
